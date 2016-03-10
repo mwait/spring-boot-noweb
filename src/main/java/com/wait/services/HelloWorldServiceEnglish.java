@@ -3,8 +3,8 @@ package com.wait.services;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Component
-@Profile("english")
+//@Component
+//@Profile("english")
 public class HelloWorldServiceEnglish implements HelloWorldService {
 
 	@Override

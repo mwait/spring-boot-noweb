@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import com.wait.controllers.GreetingController;
 
 @SpringBootApplication
-@ComponentScan("com.wait")
+@ComponentScan({"com.wait", "config"})
 public class SpringBootNowebApplication {
 
 	public static void main(String[] args) {
