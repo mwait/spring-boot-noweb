@@ -12,12 +12,12 @@ import com.wait.services.HelloWorldService;
 @Configuration
 public class EasyConfig {
 
-	@Bean
-	public HelloWorldFactory helloWordFactory(){
-		return new HelloWorldFactory();
-	}
+	//@Bean
+//	public HelloWorldFactory helloWordFactory(){
+	//	return new HelloWorldFactory();
+	//}
 	
-	@Bean
+/*	@Bean
 	@Profile("english")
 	@Primary
 	public HelloWorldService helloWorldServiceEnglish(HelloWorldFactory fabryka) {
@@ -28,10 +28,10 @@ public class EasyConfig {
 	@Primary
 	public HelloWorldService helloWorldServicePolishImpl(HelloWorldFactory fabryka) {
 		return fabryka.getHelloWorldService("polish");
-	}
+	}*/
 	
-	@Bean
+	/*@Bean
 	public HelloWorldService helloWorldServiceRussianImpl(HelloWorldFactory fabryka) {
 		return fabryka.getHelloWorldService("russian");
-	}
+	}*/
 }

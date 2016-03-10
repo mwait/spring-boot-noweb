@@ -6,13 +6,13 @@ import org.springframework.stereotype.Controller;
 
 import com.wait.services.HelloWorldService;
 
-@Controller
+//@Controller
 public class GreetingController {
 
-	@Autowired
+	//@Autowired
 	private HelloWorldService helloWorldService;
-	@Autowired
-	@Qualifier(value="helloWorldServiceRussianImpl")
+	//@Autowired
+	//@Qualifier(value="helloWorldServiceRussianImpl")
 	private HelloWorldService helloWorldServiceRussian;
 	
 	
@@ -22,5 +22,27 @@ public class GreetingController {
 		System.out.println(helloWorldServiceRussian.getGreeting());
 		return pozdrowienia;
 	}
+
+
+	public HelloWorldService getHelloWorldService() {
+		return helloWorldService;
+	}
+
+
+	public void setHelloWorldService(HelloWorldService helloWorldService) {
+		this.helloWorldService = helloWorldService;
+	}
+
+
+	public HelloWorldService getHelloWorldServiceRussian() {
+		return helloWorldServiceRussian;
+	}
+
+
+	public void setHelloWorldServiceRussian(HelloWorldService helloWorldServiceRussian) {
+		this.helloWorldServiceRussian = helloWorldServiceRussian;
+	}
+	
+	
 	
 }
